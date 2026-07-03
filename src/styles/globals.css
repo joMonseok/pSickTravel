@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+html {
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background: #ffffff;
+  line-height: var(--line-height-base);
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--color-text);
+  background: #ffffff;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#app {
+  position: relative;
+  isolation: isolate;
+}
+
+.app-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.placeholder-view {
+  display: grid;
+  gap: var(--space-4);
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+  border: 1px solid rgb(17 17 17 / 10%);
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.placeholder-view h1 {
+  margin: 0;
+  color: var(--color-text-strong);
+  font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-2xl));
+  line-height: var(--line-height-tight);
+}
+
+.placeholder-view p {
+  max-width: 680px;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-loose);
+}
+
+.placeholder-view .eyebrow {
+  color: var(--color-accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.app-shell,
+.app-main {
+  position: relative;
+  z-index: 1;
+}
